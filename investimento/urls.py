@@ -23,7 +23,7 @@ from django.contrib.auth import views as auth_views   # views de autenticação
 
 # as view() tem o padrao para buscar o template, vamos colocar o nosso local dentro de as view('aqui') para nao ser padrao
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('adm/', admin.site.urls),
     path('conta/',usuario_views.novo_usuario, name='novo_usuario'),
     path('login/', auth_views.LoginView.as_view(template_name='usuarios/login.html'), name='login'),  # login
     path('logout/', auth_views.LogoutView.as_view(template_name='usuarios/logout.html'), name='logout'), # logout

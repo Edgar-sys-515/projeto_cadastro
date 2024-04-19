@@ -1,6 +1,14 @@
 {% extends 'investimentos/base.html'%}
 {% block conteudo  %}
 
+<script>
+    function recarregarPagina() {
+        window.location.reload(true);
+    }
+
+    setInterval(recarregarPagina, 10000);
+</script>
+
 <h1 style="text-align: center;">Listagem de investimentos</h1>
 <div class="container">
     <button class="btn btn-success" style="margin-bottom: 10px;"><a style="color:white" href="{% url 'novo_investimento' %}">Novo Investimento</a></button>

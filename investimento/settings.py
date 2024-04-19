@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'investimento.wsgi.application'
+WSGI_APPLICATION = 'investimento.wsgi.application'  # tem que trocar no gunicorn investimento.wsgi:application tem q trocar para :
 
 
 # Database
